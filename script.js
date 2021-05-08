@@ -1,5 +1,4 @@
 // Select DOM items
-// Staged text i dont want to see-...
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
