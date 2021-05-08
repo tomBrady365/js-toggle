@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="background_styles.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/static-menu.css" />
     <title>Responsive Navbar</title>
   </head>
   <body id="bg-img">
+    <!-- Test: Static Navbar -->
     <header>
+    <div class="static">
+      <ul class="menu-static">
+        <li class="menu-item active"><a class="menu-link" href="./index.html">Home</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">News</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!-- EOF Test -->
+    
       <!-- First Step - The X-Menu -->
       <nav class="menu">
-        <!-- <div class="brand-title">Brand Name</div> -->
         <div class="menu-btn">
           <div class="btn-line"></div>
           <div class="btn-line"></div>
@@ -18,13 +28,16 @@
         </div>
 
         <ul class="menu-nav">
-          <li class="nav-item  current"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item current">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#">News</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main id="home">
       <h1>Anthony <span class="text-secondary">Brady</span></h1>
       <h2>Developer, Programmer, Technician</h2>
@@ -32,9 +45,10 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque maxime
         architecto quis tempora aliquid voluptates est pariatur deleniti impedit
         veritatis. Doloribus possimus non debitis facere sunt voluptatibus harum
-        assumenda nostrum!
+        assumenda nostrum! <a href="#">link</a>
       </p>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>

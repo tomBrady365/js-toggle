@@ -20,12 +20,12 @@ body {
 h1 {
   font-weight: 600;
   font-size: 3rem;
-  /* margin-bottom: 1rem; */
+  letter-spacing: .05em;
 }
 
 h2 {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -52,5 +52,5 @@ main#home h1 {
 }
 
 main p {
-  width: 70vw;
+  width: 60vw;
 }

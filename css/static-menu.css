@@ -1,0 +1,29 @@
+.static {
+  position: fixed;
+  top: 0;
+  width: 40vw;
+  z-index: 3;
+}
+
+.menu-static {
+  display: flex;
+}
+
+.menu-static {
+  padding: 4rem;
+  list-style: none;
+}
+
+.menu-static li {
+  padding-right: 10px;
+}
+
+.menu-link {
+  color: tomato;
+}
+
+.static .menu-item.active > a {
+  /* color: #eece1a; */
+  color: whitesmoke;
+  font-weight: bolder;
+}
