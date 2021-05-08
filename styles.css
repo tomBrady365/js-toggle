@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #444;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.text-secondary {
+  color: tomato;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  /* margin-bottom: 1rem; */
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* The Header Area */
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+/* The Main Part */
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+}
+
+main#home h1 {
+  margin-top: 15vh;
+}
+
+main p {
+  width: 70vw;
+}
+
+/* The Menu Part */
+/* Hardest Thing todo  */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu.show {
+  visibility: visible;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: #373737;
+  list-style: none;
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.4s ease-in-out;
+}
+.menu-nav.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.menu .nav-link:hover {
+  color: tomato;
+}
+.menu .nav-item.current > a {
+  color: rgb(255, 125, 100);
+  font-weight: bolder;
+}
